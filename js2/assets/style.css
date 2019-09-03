@@ -28,10 +28,23 @@ h2 {
 
 /* Start Praktikum 4 */
 
-body {
+
+/* body {
     background: lightcyan;
     color: white;
-}
+} */
 
 
 /* End Praktikum 4 */
+
+
+/* Start Praktikum 5 */
+
+body {
+    background: url(../img/pinguin.png), url(../img/snow.jpg);
+    background-repeat: no-repeat, repeat;
+    color: #fff;
+}
+
+
+/* End Praktikum 5 */
