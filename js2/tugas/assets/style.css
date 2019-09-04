@@ -1,0 +1,94 @@
+body.index {
+    background: url(../img/bg_biodata.jpg);
+}
+
+h1#data_diri {
+    text-align: center;
+    color: whitesmoke;
+}
+
+div#foto {
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+img#pribadi {
+    height: 200px;
+    width: 150px;
+}
+
+table {
+    background-color: whitesmoke;
+    align-self: auto;
+    margin-bottom: 16px;
+}
+
+td {
+    padding: 5px;
+    color: black;
+}
+
+a:link {
+    color: black;
+    font-weight: 200;
+}
+
+a:visited {
+    color: red;
+}
+
+a:hover {
+    color: blue;
+}
+
+
+/* poltek.html */
+
+body.poltek {
+    background: linear-gradient(blue, lightblue);
+    background-repeat: no-repeat;
+}
+
+div.logo {
+    text-align: center;
+}
+
+img#logo {
+    margin-right: 50px;
+    margin-top: 32px;
+    width: 200px;
+}
+
+h1#title {
+    text-align: center;
+}
+
+ol.jurusan {
+    position: relative;
+    line-height: 2;
+}
+
+div.content {
+    margin-left: 16px;
+    margin-right: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+p.sejarah {
+    text-align: justify;
+}
+
+.home {
+    margin-top: 16px;
+    position: sticky;
+    float: left;
+    width: 50px;
+}
+
+a.address:link {
+    color: yellow;
+}
+
+a.address:hover {
+    color: black;
+}

@@ -1,0 +1,8 @@
+.tulisan_warna {
+    color: blue;
+    /* Soal 14 */
+    text-align: center;
+    text-decoration: underline;
+    /* Soal 16 */
+    letter-spacing: 5px;
+}
