@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tugas Date</title>
+</head>
+
+<body>
+    <h2>Score 100</h2>
+    <p>Tampilkan tanggal <br> Tampilkan bulan <br> Tampilkan tahun <br> Tampilkan tanggal, bulan, tahun dengan format dd/mm/yyyy <br> Tampilkan tanggal, bulan, tahun dengan format dd-mm-yyyy <br> Hint : tampilkan dengan menggunakan fungsi console.log()</p>
+
+    <h2>Bonus Stage : Score 25</h2>
+    <p>Buatlah jam dengan format hh:mm -> contoh 23:40 <br> Pastikan jam tersebut berjalan REAL TIME dengan ticker detik adalah ":" <br> Jelaskan setiap fungsi kode yang kamu tulis!</p>
+
+    <p>Tampilkan tanggal</p>
+    <p id="date"></p>
+    <p>Tampilkan bulan</p>
+    <p id="month"></p>
+    <p>Tampilkan tahun</p>
+    <p id="year"></p>
+    <p>Tampilkan dd/mm/yyyy</p>
+    <p id="dateFullSlash"></p>
+    <p>Tampilkan dd-mm-yyyy</p>
+    <p id="dateFullStrip"></p>
+
+    <script>
+        var d = new Date();
+        var dd = d.getDate();
+        var mm = d.getMonth() + 1;
+        var yy = d.getFullYear();
+        if (dd < 10) {
+            dd = '0' + dd;
+        }
+        if (mm < 10) {
+            mm = '0' + mm;
+        }
+        var todaySlash = dd + '/' + mm + '/' + yy;
+        var todayStrip = dd + '-' + mm + '-' + yy;
+
+        document.getElementById("date").innerHTML = dd;
+        document.getElementById("month").innerHTML = mm;
+        document.getElementById("year").innerHTML = yy;
+        document.getElementById("dateFullSlash").innerHTML = todaySlash;
+        document.getElementById("dateFullStrip").innerHTML = todayStrip;
+    </script>
+</body>
+
+</html>

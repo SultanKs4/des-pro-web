@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets//css/stylePoltek.css">
+    <link rel="stylesheet" href="assets//css/styleFeedback.css">
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+    <title>Politeknik Negeri Malang</title>
+</head>
+
+<body class="poltek">
+    <div class="Header">
+        <div class="logo">
+            <a href="index.html" name="home"> <img class="home" src="img/home.png" alt="home"></a>
+            <img id="logo" src="img/logo.png" alt="poltek">
+        </div>
+        <h1 id="title">Politeknik Negeri Malang</h1>
+        <div class="topnav" id="navbar">
+            <a href="poltek.html">Home</a>
+            <a href="#sejarah">Sejarah</a>
+            <a href="#jurusan">Jurusan</a>
+            <a href="#alamat">Alamat</a>
+            <a href="feedback.html">Feedback</a>
+        </div>
+    </div>
+    <div class="content">
+        <div class="contentFeedback">
+            <h2>Feedback Form</h2>
+            <form method="GET" action="poltek.html" class="form">
+                <b>Enter your Name</b><br>
+                <input type="text" name="var1" size="30" value=""><br><br>
+                <b>Enter your Email</b><br>
+                <input type="text" name="var2" size="30" value=""><br><br>
+                <b>Enter Your Comment</b><br>
+                <textarea name="var9" style="width: 250px;height: 100px;">Fill your comment here</textarea><br>
+                <button onclick="message()" class="send">Submit</button>
+            </form>
+        </div>
+    </div>
+    <div class="footer">
+        &copy;2019 Sultan Achmad Qum Masykuro NS
+    </div>
+    <script>
+        function message() {
+            alert("Thanks for your feedback!")
+            window.location.href = 'poltek.html';
+        }
+        window.onscroll = function() {
+            myFunction()
+        };
+
+        var navbar = document.getElementById("navbar");
+
+        var sticky = navbar.offsetTop;
+
+        var prevScrollpos = window.pageYOffset;
+
+        function myFunction() {
+            if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky")
+            } else {
+                navbar.classList.remove("sticky");
+            }
+
+            var currentScrollPos = window.pageYOffset;
+            if (prevScrollpos > currentScrollPos) {
+                document.getElementById("navbar").style.top = "0";
+            } else {
+                document.getElementById("navbar").style.top = "-50px";
+            }
+            prevScrollpos = currentScrollPos;
+        }
+    </script>
+</body>
+
+</html>

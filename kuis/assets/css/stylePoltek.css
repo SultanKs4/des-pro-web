@@ -1,0 +1,127 @@
+body.poltek {
+    background: rgba(63, 98, 255, 0.554);
+    background-repeat: no-repeat;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+div.logo {
+    text-align: center;
+    width: auto;
+    height: auto;
+}
+
+img#logo {
+    margin-right: 50px;
+    margin-top: 32px;
+    width: 200px;
+}
+
+h1#title {
+    text-align: center;
+}
+
+ol.jurusan {
+    position: relative;
+    line-height: 2;
+}
+
+div.content {
+    margin-left: 16px;
+    margin-right: 16px;
+}
+
+p.sejarah {
+    text-align: justify;
+}
+
+div.sejarah,
+div.jurusan,
+div.address {
+    background: whitesmoke;
+    border-radius: 25px;
+    padding-top: 2px;
+    padding-left: 10px;
+    padding-right: 18px;
+    padding-bottom: 8px;
+    margin-top: 28px;
+}
+
+div.jurusan {
+    width: 40%;
+}
+
+div.address {
+    margin-left: 28px;
+    flex-grow: 1;
+}
+
+div.side {
+    display: flex;
+}
+
+.home {
+    margin-top: 16px;
+    position: sticky;
+    float: left;
+    width: 50px;
+}
+
+a.address:link {
+    color: yellow;
+}
+
+a.address:hover {
+    color: black;
+}
+
+div#mapsGoogle {
+    margin: 0px auto;
+    margin-top: 16px;
+}
+
+.topnav {
+    overflow: hidden;
+    margin-left: 16px;
+    margin-right: 16px;
+    border-radius: 8px;
+    background-color: #333;
+    transition: top 0.3s;
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.topnav a.active {
+    background-color: rgba(63, 98, 255, 0.554);
+    color: white;
+}
+
+.topnav .icon {
+    display: none;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 96.5%;
+}
+
+.footer {
+    background: whitesmoke;
+    text-align: center;
+    margin: 16px;
+    padding: 8px;
+    border-radius: 6px;
+}

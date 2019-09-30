@@ -1,0 +1,11 @@
+div.contentFeedback {
+    background: whitesmoke;
+    margin: 0px auto;
+    margin-top: 16px;
+    padding: 16px;
+    width: 20%;
+}
+
+button.send {
+    margin-top: 8px;
+}

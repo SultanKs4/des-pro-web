@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Data Diri</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script>
+        function cek() {
+            var yakin = confirm("Apakah kamu yakin ingin mengunjungi polinema?")
+
+            if (yakin) {
+                window.location.href = "poltek.html";
+            }
+        }
+    </script>
+</head>
+
+<body class="index">
+    <div class="header">
+        <h1 id="data_diri">Data Diri</h1><br>
+    </div>
+    <div class="main-content">
+        <div id="foto">
+            <img id="pribadi" src="img/Sultan Achmad Q.jpg" alt="Sultan">
+        </div>
+        <div id="tableBiodata">
+            <table border="1" align="center" id="biodata">
+                <tr>
+                    <td>Nama</td>
+                    <td>Sultan Achmad Qum Masykuro NS</td>
+                </tr>
+                <tr>
+                    <td>TTL</td>
+                    <td>Malang, 8 November 1999</td>
+                </tr>
+                <tr>
+                    <td>NIM</td>
+                    <td>1841720019</td>
+                </tr>
+                <tr>
+                    <td>Kelas</td>
+                    <td>TI-2C</td>
+                </tr>
+                <tr>
+                    <td rowspan="4">Riwayat Pendidikan</td>
+                    <td>SD : SDN 1 Ardimulyo</td>
+                </tr>
+                <tr>
+                    <td>SMP : SMPN 1 Lawang</td>
+                </tr>
+                <tr>
+                    <td>SMK : SMKN 8 Malang</td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="#" onclick="cek()">Politeknik Negeri Malang</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td rowspan="2">Contact</td>
+                    <td><a href="mailto:sultangendut@gmail.com">sultangendut@gmail.com</a></td>
+                </tr>
+                <tr>
+                    <td><a href="https://github.com/SultanKs4" target="_blank" rel="open-my-github">GitHub</a></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="footer">
+        &copy;2019 Sultan Achmad Qum Masykuro NS
+    </div>
+</body>
+
+</html>

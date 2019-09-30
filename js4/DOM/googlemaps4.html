@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Marker & Info Window</title>
+</head>
+
+<body>
+    <!--Elemen untuk menampilkan Peta-->
+    <div id="map" style="width:100%;height:380px"></div>
+
+    <script>
+        function initMap() {
+            //membuat objek untuk titik koordinat
+            var mapDetails = {
+                zoom: 10,
+                center: new google.maps.LatLng(-8.5830695, 116.3202515),
+                mapTypeId: 'roadmap'
+            }
+            var lombok = {
+                lat: -8.5830695,
+                lng: 116.3202515
+            };
+
+            //membuat objek peta
+            var map = new google.maps.Map(document.getElementById("map"), mapDetails);
+
+            // Marker
+            var marker = new google.maps.Marker({
+                position: lombok,
+                map: map,
+                title: 'Lombok'
+            });
+
+            //membuat objek untuk info  window
+            var contentString = '<h2>Hello Dunia!</h2>';
+
+            //membuat objek info window
+            var infowindow = new google.maps.InfoWindow({
+                content: contentString
+            });
+
+            marker.addListener('click', function() {
+                infowindow.open(map, marker)
+            })
+        }
+    </script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=initMap" type="text/javascript"></script>
+</body>
+
+</html>
