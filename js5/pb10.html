@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Praktikum bag 10</title>
+    <link rel="stylesheet" href="assets/css/styleSlideShow.css" type="text/css">
+    <script src="assets/js/jquery-3.4.1.js"></script>
+    <script>
+        var i = 0;
+        $(document).ready(function() {
+            $('.slidertitle, #slider img').hide();
+            showNextImage();
+            setInterval('showNextImage()', 3000);
+        })
+
+        function showNextImage() {
+            i++;
+            $('#sliderImage' + i).appendTo('#slider').fadeIn(1100).delay(1100).fadeOut(1100);
+            $('title' + i).appendTo('#slider').fadeIn(1100).delay(1100).fadeOut(1100);
+            if (i == 3) {
+                i = 0;
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div id="slider">
+        <img src="img/reddit.svg" id="sliderImage1">
+        <div class="slidertitle" id="title1">gambar1</div>
+        <img src="img/gambar2.png" id="sliderImage2">
+        <div class="slidertitle" id="title1">gambar2</div>
+        <img src="img/gambar3.png" id="sliderImage3">
+        <div class="slidertitle" id="title1">gambar3</div>
+    </div>
+</body>
+
+</html>
