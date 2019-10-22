@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="assets/js/jquery-3.4.1.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="jquery-ui-1.12.1/jquery-ui.js"></script>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <title>No 1</title>
+</head>
+
+<body>
+    <header>
+        <nav id="webBrand" class="navbar-dark bg-dark" style="padding-left: 16px;">
+            <a href="index.html" class="navbar-brand">
+                <img src="img/profile.png" alt="profilelogo" width="30px" height="30px"> Sultan UTS</a>
+        </nav>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-secondary">
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="1Form.html" class="nav-link">Soal 1</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="2Toko.html" class="nav-link">Soal 2</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="3OnlineShop.html" class="nav-link" target="_blank">Soal 3</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="https://github.com/SultanKs4" class="nav-link">My GitHub</a>
+                    </li>
+                </ul>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main style="background-color: whitesmoke;;">
+        <div class="container-fluid pl-4 p-3">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h2 class="text-center">Order Form</h2> <br>
+                    <form action="1act.html" method="get" onsubmit="return senddata()">
+                        Firstname: <input type="text" name="fName" required placeholder="Sultan"> Lastname: <input type="text" name="lName" placeholder="Achmad Qum" required> <br>
+                        <hr>
+                        <b>Flash fill in this field in automatically. You can replace the text.</b><br><br> Send Email To : <input type="email" placeholder="sultan@gmail.com" name="email" required><br>
+                        <hr>
+                        <b>Select Category</b><br>
+                        <input type="radio" name="cat" value="VIP">VIP<br>
+                        <input type="radio" name="cat" value="Premium">Premium<br>
+                        <input type="radio" name="cat" value="Basic">Basic<br><br> Phone : <input type="number" placeholder="+6281 3307 36498" name="phone_number" required min="0"><br><br> Date : <input type="date" name="date" required><br>
+                        <hr>
+                        <textarea placeholder="Message : " style="height: 40px;" name="message"></textarea><br><br>
+                        <button type="submit" class="btn btn-info" value="Kirim" name="send">Show Result</button>
+                        <button type="reset" class="btn btn-danger" value="Reset" name="reset">Reset Fields</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
