@@ -48,36 +48,52 @@ session_start();
             <div class="row">
                 <div class="col-sm-12">
                     <h2 class="text-center">Form Soal 3</h2>
-                    <form action="no3SignUp.php" action="post">
-                        <p>Already Registered? Login Here<br></p>
-                        <table>
-                            <tr>
-                                <td>
-                                    <label for="email">Email:</label>
-                                </td>
-                                <td>
-                                    <input type="email" placeholder="sultangendut@gmail.com" id="email" name="email"
-                                        required><br>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <label for="password">Password:</label>
-                                </td>
-                                <td>
-                                    <input type="password" name="password" type="password" id="password"
-                                        required><br><br>
-                                </td>
-                            </tr>
-                        </table>
-                        <input type="checkbox" name="save">Save My Email and Password<br>
-                        <button type="submit" class="btn btn-info" value="Kirim">Continue>></button>
-                        <button type="reset" class="btn btn-danger" value="Reset">Reset</button>
-                    </form>
+                    <div class="text-center">
+                        <div class="text-left d-inline-block">
+                            <form action="no3SignUp.php" method="POST">
+                                <p>Already Registered? Login Here<br></p>
+                                <table>
+                                    <tr>
+                                        <td>
+                                            <label for="email">Email</label>
+                                        </td>
+                                        <td>
+                                            <input type="email" placeholder="email@mail.com" id="email" name="email"
+                                                required>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <label for="password">Password</label>
+                                        </td>
+                                        <td>
+                                            <input type="password" name="password" type="password" id="password"
+                                                required
+                                                placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2"> <input type="checkbox" name="save"> Save My Email and
+                                            Password<br></td>
+                                    </tr>
+                                </table><br>
+                                <button type="submit" class="btn btn-info" value="kirim"
+                                    name="kirim">Continue>></button>
+                                <button type="reset" class="btn btn-danger" value="Reset">Reset</button>
+                            </form>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </main>
+    <footer class="footer">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="#273036" fill-opacity="0.9"
+                d="M0,192L120,197.3C240,203,480,213,720,218.7C960,224,1200,224,1320,224L1440,224L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z">
+            </path>
+        </svg>
+    </footer>
 </body>
 
 </html>

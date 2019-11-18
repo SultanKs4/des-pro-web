@@ -61,46 +61,54 @@
                             array("4", "Dean", "Kulkas", "15 September 2016", "1.750.000"),
                             array("5", "", "", "11 Oktober 2016", "450.000")
                         );
-                        echo "<tr>";
-                        echo "<td>" . $Pembeli[0][0] . "</td>";
-                        echo "<td>" . $Pembeli[0][1] . "</td>";
-                        echo "<td>" . $Pembeli[0][2] . "</td>";
-                        echo "<td>" . $Pembeli[0][3] . "</td>";
-                        echo "<td>" . $Pembeli[0][4] . "</td>";
-                        echo "</tr>";
-                        echo "<tr>";
-                        echo "<td>" . $Pembeli[1][0] . "</td>";
-                        echo "<td>" . $Pembeli[1][1] . "</td>";
-                        echo "<td>" . $Pembeli[1][2] . "</td>";
-                        echo "<td>" . $Pembeli[1][3] . "</td>";
-                        echo "<td>" . $Pembeli[1][4] . "</td>";
-                        echo "</tr>";
-                        echo "<tr>";
-                        echo "<td>" . $Pembeli[2][0] . "</td>";
-                        echo "<td>" . $Pembeli[2][1] . "</td>";
-                        echo "<td>" . $Pembeli[2][2] . "</td>";
-                        echo "<td>" . $Pembeli[2][3] . "</td>";
-                        echo "<td>" . $Pembeli[2][4] . "</td>";
-                        echo "</tr>";
-                        echo "<tr>";
-                        echo "<td>" . $Pembeli[3][0] . "</td>";
-                        echo "<td>" . $Pembeli[3][1] . "</td>";
-                        echo "<td>" . $Pembeli[3][2] . "</td>";
-                        echo "<td>" . $Pembeli[3][3] . "</td>";
-                        echo "<td>" . $Pembeli[3][4] . "</td>";
-                        echo "</tr>";
-                        echo "<tr>";
-                        echo "<td>" . $Pembeli[4][0] . "</td>";
-                        echo "<td>" . $Pembeli[4][1] . "</td>";
-                        echo "<td>" . $Pembeli[4][2] . "</td>";
-                        echo "<td>" . $Pembeli[4][3] . "</td>";
-                        echo "<td>" . $Pembeli[4][4] . "</td>";
-                        echo "</tr>";
                         ?>
+                        <tr>
+                            <td> <?php echo ($Pembeli[0][0]); ?> </td>
+                            <td> <?php echo ($Pembeli[0][1]); ?> </td>
+                            <td> <?php echo ($Pembeli[0][2]); ?> </td>
+                            <td> <?php echo ($Pembeli[0][3]); ?> </td>
+                            <td> <?php echo ($Pembeli[0][4]); ?> </td>
+                        </tr>
+                        <tr>
+                            <td> <?php echo ($Pembeli[1][0]); ?> </td>
+                            <td> <?php echo ($Pembeli[1][1]); ?> </td>
+                            <td> <?php echo ($Pembeli[1][2]); ?> </td>
+                            <td> <?php echo ($Pembeli[1][3]); ?> </td>
+                            <td> <?php echo ($Pembeli[1][4]);  ?> </td>
+                        </tr>
+                        <tr>
+                            <td> <?php echo ($Pembeli[2][0]); ?> </td>
+                            <td> <?php echo ($Pembeli[2][1]); ?> </td>
+                            <td> <?php echo ($Pembeli[2][2]); ?> </td>
+                            <td> <?php echo ($Pembeli[2][3]); ?> </td>
+                            <td> <?php echo ($Pembeli[2][4]); ?> </td>
+                        </tr>
+                        <tr>
+                            <td> <?php echo ($Pembeli[3][0]); ?> </td>
+                            <td> <?php echo ($Pembeli[3][1]); ?> </td>
+                            <td> <?php echo ($Pembeli[3][2]); ?> </td>
+                            <td> <?php echo ($Pembeli[3][3]); ?> </td>
+                            <td> <?php echo ($Pembeli[3][4]); ?> </td>
+                        </tr>
+                        <tr>
+                            <td> <?php echo ($Pembeli[4][0]); ?> </td>
+                            <td> <?php echo ($Pembeli[4][1]); ?> </td>
+                            <td> <?php echo ($Pembeli[4][2]); ?> </td>
+                            <td> <?php echo ($Pembeli[4][3]); ?> </td>
+                            <td> <?php echo ($Pembeli[4][4]); ?> </td>
+                        </tr>
+                    </table>
                 </div>
             </div>
         </div>
     </main>
+    <footer class="footer fixed-bottom">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="#273036" fill-opacity="0.9"
+                d="M0,192L120,197.3C240,203,480,213,720,218.7C960,224,1200,224,1320,224L1440,224L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z">
+            </path>
+        </svg>
+    </footer>
 </body>
 
 </html>

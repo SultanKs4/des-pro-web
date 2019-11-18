@@ -45,19 +45,30 @@
             <div class="row">
                 <div class="col-sm-12">
                     <h2 class="text-center">Riwayat Pendidikan</h2>
-                    <?php
-                    $myFile = "text/pendidikan.txt";
-                    $fh = fopen($myFile, 'r');
-                    $theData = fread($fh, filesize($myFile));
-                    echo "$theData <br>";
-                    $size = filesize("text/pendidikan.txt");
-                    echo ("File size : " . $size . " Bytes<br>");
-                    fclose($fh);
-                    ?>
+                    <div class="text-center">
+                        <div class="text-left d-inline-block">
+                            <?php
+                            $myFile = "text/pendidikan.txt";
+                            $fh = fopen($myFile, 'r');
+                            $theData = fread($fh, filesize($myFile));
+                            echo "$theData <br>";
+                            $size = filesize("text/pendidikan.txt");
+                            echo ("File size : " . $size . " Bytes<br>");
+                            fclose($fh);
+                            ?>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </main>
+    <footer class="footer fixed-bottom">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="#273036" fill-opacity="0.9"
+                d="M0,192L120,197.3C240,203,480,213,720,218.7C960,224,1200,224,1320,224L1440,224L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z">
+            </path>
+        </svg>
+    </footer>
 </body>
 
 </html>

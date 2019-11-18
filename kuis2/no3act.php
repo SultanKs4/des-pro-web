@@ -45,38 +45,77 @@
             <div class="row">
                 <div class="col-sm-12">
                     <h2 class="text-center">Form Soal 3 Hasil</h2>
-                    <?php
-                    if (isset($_POST['submit'])) {
-                        $name = $_POST['name'];
-                        $email = $_POST['email'];
-                        $email2 = $_POST['email2'];
-                        $countryCode = $_POST['countryCode'];
-                        $cityCode = $_POST['cityCode'];
-                        $phoneNumber = $_POST['phoneNumber'];
-                        $mobilePhoneNumber = $_POST['mobilePhoneNumber'];
-                        $postalAddress = $_POST['postalAddress'];
-                        $myList = $_POST['myList'];
-                        $password = $_POST['password'];
-                        $password2 = $_POST['password2'];
+                    <div class="text-center">
+                        <div class="d-inline-block text-left">
+                            <?php
+                            if (isset($_POST['submit'])) {
+                                $name = $_POST['name'];
+                                $email = $_POST['email'];
+                                $email2 = $_POST['email2'];
+                                $countryCode = $_POST['countryCode'];
+                                $cityCode = $_POST['cityCode'];
+                                $phoneNumber = $_POST['phoneNumber'];
+                                $mobilePhoneNumber = $_POST['mobilePhoneNumber'];
+                                $postalAddress = $_POST['postalAddress'];
+                                $myList = $_POST['myList'];
+                                $password = $_POST['password'];
+                                $password2 = $_POST['password2'];
 
-                        echo "Name : " . $name . "<br>";
-                        echo "Email : " . $email . "<br>";
-                        echo "Alternate Email: " . $email2 . "<br>";
-                        echo "Country Code: " . $countryCode . "<br>";
-                        echo "City Code : " . $cityCode . "<br>";
-                        echo "Phone Number : " . $phoneNumber . "<br>";
-                        echo "Mobile Phone Number : " . $mobilePhoneNumber . "<br>";
-                        echo "Postal Address : " . $postalAddress . "<br>";
-                        echo "Country : " . $myList . "<br>";
-                        echo "Password : " . $password . "<br>";
-                    } else {
-                        echo ("Tidak ada data");
-                    }
-                    ?><br>
+                                if ($myList == "null") {
+                                    header('Location: no3SignUp.php?error=country_invalid');
+                                } elseif (!preg_match("/^[0-9+]*$/", $mobilePhoneNumber)) {
+                                    header('Location: no3SignUp.php?error=mobile_invalid');
+                                }
+                                ?>
+                            <table>
+                                <tr>
+                                    <td>Name</td>
+                                    <td><?php echo ($name); ?></td>
+                                </tr>
+                                <tr>
+                                    <td>Email</td>
+                                    <td><?php echo ($email); ?></td>
+                                </tr>
+                                <tr>
+                                    <td>Alternate Email </td>
+                                    <td><?php echo ($email2); ?></td>
+                                </tr>
+                                <tr>
+                                    <td>Phone</td>
+                                    <td colspan="3"><?php echo ($countryCode . " " . $cityCode . " " . $phoneNumber); ?>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Mobile Phone</td>
+                                    <td><?php echo ($mobilePhoneNumber); ?></td>
+                                </tr>
+                                <tr>
+                                    <td>Postal Address</td>
+                                    <td><?php echo ($postalAddress); ?></td>
+                                </tr>
+                                <tr>
+                                    <td>Country</td>
+                                    <td><?php echo ($myList); ?></td>
+                                </tr>
+                            </table>
+                            <?php
+                            } else {
+                                echo ("Tidak ada data");
+                            }
+                            ?><br>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </main>
+    <footer class="footer fixed-bottom">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="#273036" fill-opacity="0.9"
+                d="M0,192L120,197.3C240,203,480,213,720,218.7C960,224,1200,224,1320,224L1440,224L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z">
+            </path>
+        </svg>
+    </footer>
 </body>
 
 </html>

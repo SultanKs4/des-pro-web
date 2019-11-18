@@ -56,7 +56,6 @@
                         $departement = $_POST['departement'];
                         $ttl = $_POST['ttl'];
                         $alamat = $_POST['postalAddress'];
-                        echo "<h2><b>Information User</b><hr></h2><br>";
                         $target_path = "img/uploads/";
                         $target_path = $target_path . basename(
                             $_FILES['uploadedfile']['name']
@@ -69,16 +68,45 @@
                         } else {
                             echo "There was an error during uploading the file, please try again<br>";
                         }
-                        echo "Name : " . $nama . "<br>";
-                        echo "No Kerja: " . $nokerja . "<br>";
-                        echo "No Telpon HP: " . $mobile . "<br>";
-                        echo "No Telp Rumah: " . $home . "<br>";
-                        echo "No Telp Kantor : " . $office . "<br>";
-                        echo "Unit : " . $unit . "<br>";
-                        echo "Departement : " . $departement . "<br>";
-                        echo "Tempat Tanggal Lahir : " . $ttl . "<br>";
-                        echo "Alamat : " . $alamat . "<br>";
-                        ?><br>
+                        ?>
+                    <table>
+                        <tr>
+                            <td>Name</td>
+                            <td><?php echo $nama; ?></td>
+                        </tr>
+                        <tr>
+                            <td>No Kerja</td>
+                            <td><?php echo $nokerja; ?></td>
+                        </tr>
+                        <tr>
+                            <td>No Telpon HP</td>
+                            <td><?php echo $mobile; ?></td>
+                        </tr>
+                        <tr>
+                            <td>No Telp Rumah</td>
+                            <td><?php echo $home; ?></td>
+                        </tr>
+                        <tr>
+                            <td>No Telp Kantor</td>
+                            <td><?php echo $office; ?></td>
+                        </tr>
+                        <tr>
+                            <td>Unit</td>
+                            <td><?php echo $unit; ?></td>
+                        </tr>
+                        <tr>
+                            <td>Departement</td>
+                            <td><?php echo $departement; ?></td>
+                        </tr>
+                        <tr>
+                            <td>Tempat Tanggal Lahir</td>
+                            <td><?php echo $ttl; ?></td>
+                        </tr>
+                        <tr>
+                            <td>Alamat</td>
+                            <td><?php echo $alamat; ?></td>
+                        </tr>
+                    </table><br>
                     <div class="alert alert-warning" role="alert">
                         <h4 class="alert-heading">Yang tertanda pada biodata diatas: </h4>
                         <p>Dengan secara sukarela, demokratis dan penuh kesadaran menyatakan diri sebagai Anggota
@@ -104,6 +132,13 @@
         </div>
         </div>
     </main>
+    <footer class="footer">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="#273036" fill-opacity="0.9"
+                d="M0,192L120,197.3C240,203,480,213,720,218.7C960,224,1200,224,1320,224L1440,224L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z">
+            </path>
+        </svg>
+    </footer>
 </body>
 
 </html>

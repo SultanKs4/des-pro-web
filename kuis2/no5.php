@@ -51,20 +51,20 @@
                                 <form class="form-horizontal" enctype="multipart/form-data" method="POST"
                                     action="no5act.php">
                                     <div class="form-group">
-                                        <label class="control-label col-sm-4" for="nama">Nama Anda:</label>
+                                        <label class="control-label col-sm-4" for="nama">Nama Anda</label>
                                         <div class="col-sm-12">
                                             <input type="text" class="form-control" name="nama" id="nama" required>
                                         </div>
                                     </div>
                                     <div class="form-group">
-                                        <label class="control-label col-sm-4" for="nokerja">No Pekerja:</label>
+                                        <label class="control-label col-sm-4" for="nokerja">No Pekerja</label>
                                         <div class="col-sm-12">
                                             <input type="number" class="form-control" id="nokerja" name="nokerja"
                                                 required>
                                         </div>
                                     </div>
                                     <div class="form-group">
-                                        <label class="control-label col-sm-4" for="mobile">No Telepon HP:</label>
+                                        <label class="control-label col-sm-4" for="mobile">No Telepon HP</label>
                                         <div class="col-sm-12">
                                             <input type="tel" class="form-control" id="mobile" name="mobile" min="0"
                                                 required>
@@ -72,46 +72,46 @@
                                     </div>
                                     <div class="form-group">
                                         <label class="control-label col-sm-4" for="home">No Telepon
-                                            Rumah:</label>
+                                            Rumah</label>
                                         <div class="col-sm-12">
                                             <input type="tel" class="form-control" id="home" name="home" min="0">
                                         </div>
                                     </div>
                                     <div class="form-group">
                                         <label class="control-label col-sm-4" for="office">No Telepon
-                                            Kantor:</label>
+                                            Kantor</label>
                                         <div class="col-sm-12">
                                             <input type="tel" class="form-control" id="office" min="0" name="office">
                                         </div>
                                     </div>
                                     <div class="form-group">
-                                        <label class="control-label col-sm-4" for="unit">Unit : </label>
+                                        <label class="control-label col-sm-4" for="unit">Unit</label>
                                         <div class="col-sm-12">
                                             <input type="text" class="form-control" id="unit" name="unit" required>
                                         </div>
                                     </div>
                                     <div class="form-group">
-                                        <label class="control-label col-sm-4" for="departement">Departement : </label>
+                                        <label class="control-label col-sm-4" for="departement">Departement</label>
                                         <div class="col-sm-12">
                                             <input type="text" class="form-control" id="departement" name="departement"
                                                 required>
                                         </div>
                                     </div>
                                     <div class="form-group">
-                                        <label class="control-label col-sm-5" for="ttl">Tempat Tanggal Lahir: </label>
+                                        <label class="control-label col-sm-5" for="ttl">Tempat Tanggal Lahir</label>
                                         <div class="col-sm-12">
                                             <input type="text" class="form-control" id="ttl" name="ttl" required>
                                         </div>
                                     </div>
                                     <div class="form-group">
-                                        <label class="control-label col-sm-2" for="alamat">Alamat : </label>
+                                        <label class="control-label col-sm-2" for="alamat">Alamat</label>
                                         <div class="col-sm-12">
                                             <textarea style="height: 60px; width: 610px;" name="postalAddress"
                                                 id="postal" placeholder="PostalAddress"></textarea><br>
                                         </div>
                                     </div>
                                     <div class="ml-3">
-                                        <label class="control-label" for="foto">Upload Foto :</label>
+                                        <label class="control-label" for="foto">Upload Foto</label>
                                         <input type="file" name="uploadedfile" required id="foto">
                                     </div>
                                     <br>
@@ -126,6 +126,13 @@
             </div>
         </div>
     </main>
+    <footer class="footer">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="#273036" fill-opacity="0.9"
+                d="M0,192L120,197.3C240,203,480,213,720,218.7C960,224,1200,224,1320,224L1440,224L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z">
+            </path>
+        </svg>
+    </footer>
 </body>
 
 </html>
